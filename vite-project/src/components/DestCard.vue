@@ -2,6 +2,7 @@
   <div>
     <h2>{{ Candy.name }}</h2>
     <img :src="Candy.img" alt= "" />
+    <h3>{{ Candy.price }}</h3>
     <!-- <h3>{{ clicked }}</h3>
     <button @click="increment">Click Me</button> -->
   </div>
