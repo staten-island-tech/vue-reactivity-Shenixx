@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div class = container>
     <DestCard
       v-for="candy in candies"
       :key="candy.name"
@@ -9,7 +9,7 @@
 </template>
 
 <script setup>
-import DestCard from "@/components/DestCard.vue";
+import DestCard from "@/components/CandyCard.vue";
 const candies = [
   {
     name: "Reese's Peanut Butter Cups",
@@ -30,11 +30,6 @@ const candies = [
     name: "Air Heads",
     img: "https://www.airheads.com/wp-content/uploads/2021/12/bars_0003_AH_Bars_Watermelon_frt-1-1-960x1199.png",
     price: 22,
-  },
-  {
-    name: "Candy Corn",
-    img: "https://cdn3d.iconscout.com/3d/premium/thumb/candy-corn-9883795-8026965.png",
-    price: 323,
   },
   {
     name: "Crybabies",
@@ -85,16 +80,6 @@ const candies = [
     name: "Nerds",
     img: "https://www.nerdscandy.com/sites/default/files/2022-06/nerds.png",
     price: 1231231,
-  },
-    {
-    name: "Orange Slices",
-    img: "https://shop.trulygoodfoods.com/cdn/shop/products/OrangeSlices_Bulk_521110.png?v=1626363978",
-    price: 21313,
-  },
-  {
-    name: "Peeps",
-    img: "https://vanholtenschocolates.com/wp-content/uploads/2021/02/LargePeep.png",
-    price: 123213,
   },
   {
     name: "Pixie Stix",
@@ -186,7 +171,39 @@ const candies = [
     img: "https://allcitycandy.com/cdn/shop/products/00041420126031_A1C1_2048x.png?v=1655484488",
     price: 69,
   },
+  {
+    name: "Hershey Bar",
+    img: "https://smartlabel.hersheys.com/images/4a64ca04-368d-4e8d-bc70-18acab950154.png",
+    price: 692,
+  },
+  {
+    name: "Snickers",
+    img: "https://i.pinimg.com/originals/21/5d/be/215dbe2a2ac9d4e28c31775891d7cd77.png",
+    price: 222,
+  },
+  {
+    name: "Twix",
+    img: "https://www.twix.com/sites/g/files/fnmzdf236/files/migrate-product-files/pm57alsea7mspqhhgfuf.png",
+    price: 223,
+  },
+  {
+    name: "Milky Way",
+    img: "https://www.milkywaybar.com/sites/g/files/fnmzdf631/files/migrate-product-files/navjcnc7rdmfi5v4b6qf.png",
+    price: 9876,
+  },
+  {
+    name: "Butterfinger",
+    img: "https://mountainmerchantvt.com/wp-content/uploads/2019/06/butterfinger.png",
+    price: 420,
+  },
 ]
 </script>
 
-<style scoped></style>
+<style scoped>
+.container {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+  margin: 0 auto;
+}</style>
