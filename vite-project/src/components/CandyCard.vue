@@ -1,13 +1,11 @@
 <template>
-  <section>
       <div class = "card">
       <h2>{{ Candy.name }}</h2>
       <img :src="Candy.img" alt= "" />
       <h3>{{ Candy.price }}</h3>
-    <!-- <h3>{{ clicked }}</h3>
-    <button @click="increment">Click Me</button> -->
+      <h3>{{ clicked }}</h3>
+      <button @click="increment">Click Me</button>
       </div>
-   </section>
 </template>
 
 <script setup>
@@ -33,7 +31,7 @@ img {
   object-fit: cover;
 }
 
-.card {
+card {
   font-family: Mukta;
   display: flex;
   align-items: center;
@@ -41,9 +39,9 @@ img {
   padding: 1rem;
   width: 26%;
   height: 35%;
-  color: var(--seconary);
+  /* color: var(--seconary);
   background-color: var(--primary1);
-  border: 1px solid var(--third);
+  border: 1px solid var(--third); */
   margin: 1.5% auto;
   justify-content: space-around;
   padding: 0 auto;

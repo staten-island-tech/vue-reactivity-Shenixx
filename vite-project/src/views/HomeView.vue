@@ -57,11 +57,6 @@ const candies = [
     price: 123123,
   },
   {
-    name: "Jawbreaker",
-    img: "https://allcitycandy.com/cdn/shop/files/IMG_2340-removebg-preview_600x.png?v=1687449112",
-    price: 2,
-  },
-  {
     name: "Jolly Rancher",
     img: "https://s7d2.scene7.com/is/image/hersheysassets/0_10700_55686_8_702_55686_005_Item_Front?fmt=png-alpha&hei=412",
     price: 123,
@@ -206,4 +201,5 @@ const candies = [
   align-items: center;
   flex-wrap: wrap;
   margin: 0 auto;
-}</style>
+}
+</style>
