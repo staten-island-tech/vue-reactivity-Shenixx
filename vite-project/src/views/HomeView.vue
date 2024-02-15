@@ -1,15 +1,22 @@
 <template>
   <div class = container>
-    <DestCard
+  <CandyCard
       v-for="candy in candies"
       :key="candy.name"
       :Candy="candy"
     />
   </div>
+
+  <div class = shopping>
+    <ShoppingCart
+      
+    />
+  </div>
 </template>
 
 <script setup>
-import DestCard from "@/components/CandyCard.vue";
+import ShoppingCart from "@/components/ShoppingCart.vue";
+import CandyCard from "@/components/CandyCard.vue";
 const candies = [
   {
     name: "Reese's Peanut Butter Cups",
@@ -198,8 +205,20 @@ const candies = [
 .container {
   display: flex;
   justify-content: space-around;
-  align-items: center;
+  align-items: left;
   flex-wrap: wrap;
   margin: 0 auto;
+  width: 75%; margin-right: 30%;
 }
+
+.shopping {
+  display: flex;
+  margin-left: 80%;
+  height: 100%;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  background-color: black;
+  margin-bottom: 90px;
+}
+
 </style>
