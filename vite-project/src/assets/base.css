@@ -33,3 +33,7 @@ body {
   background-image: var(--image);
   background-attachment: fixed;
 }
+
+#app{
+  width: 75%;
+}

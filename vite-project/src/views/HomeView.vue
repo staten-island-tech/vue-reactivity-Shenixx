@@ -9,7 +9,6 @@
 
   <div class = shopping>
     <ShoppingCart
-      
     />
   </div>
 </template>
