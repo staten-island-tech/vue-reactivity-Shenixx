@@ -4,7 +4,7 @@
     </div>
     <div>
     <button @click="store.increment()">
-        How Many You Want: {{ store.count }}
+        How Many You Want 2: {{ store.count }}
     </button>
   </div>
 </template>
