@@ -2,13 +2,13 @@
     <div class="cart">
     <h2>Shopping Cart</h2> 
         <button @click="store.increment()">
-            How Many You Want 2: {{ store.count }}
+            How Many You Want 2: {{ cart.count }}
         </button>
     </div>
 </template>
 
 <script setup>
-import { store } from '../store'
+import { cart } from '../store'
 
 </script>
 

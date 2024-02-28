@@ -3,14 +3,14 @@
     <h2>{{ Candy.name }}</h2>
     <img :src="Candy.img" alt="" />
     <h3>{{ Candy.price }}</h3>
-      <button @click="store.increment()">
-        How Many You Want: {{ store.count }}
+      <button @click="cart.increment()">
+        How Many You Want: {{ cart.count }}
       </button>
   </div>
 </template>
 
 <script setup>
-import { store } from '../store'
+import { cart } from '../store'
 
 const props = defineProps({
   Candy: Object,
