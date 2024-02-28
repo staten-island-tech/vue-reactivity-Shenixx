@@ -15,6 +15,7 @@ import { store } from '../store'
 const props = defineProps({
   Candy: Object,
 });
+
 </script>
 
 <style scoped>
@@ -43,3 +44,4 @@ card {
   padding: 0 auto;
 }
 </style>
+
