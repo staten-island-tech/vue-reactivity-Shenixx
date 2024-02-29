@@ -1,8 +1,6 @@
 import { reactive } from 'vue'
 
-export const inCart = [];
-
-export const cart = reactive({
+export const store = reactive({
   count: 0,
   increment() {
     this.count++
