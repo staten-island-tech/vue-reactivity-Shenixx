@@ -1,7 +1,7 @@
 <template>
   <div class="card">
     <h2>{{ Candy.name }}</h2>
-    <img :src="Candy.img" alt="" />
+    <img :src="Candy.img" alt={{ Candy.name }} />
     <h3>{{ Candy.price }}</h3>
       <button @click="cart.increment()">
         How Many You Want: {{ cart.count }}
