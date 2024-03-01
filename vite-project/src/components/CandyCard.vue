@@ -4,6 +4,7 @@
     <img :src="Candy.img" alt="" />
     <h3>{{ Candy.price }}</h3>
       <button @click="store.increment()">
+        @add-to-cart="$emit('add-to-cart', $event)"
         How Many You Want: {{ store.count }}
       </button>
   </div>
@@ -15,6 +16,13 @@ import { store } from '../store'
 const props = defineProps({
   Candy: Object,
 });
+
+
+methods: {
+    addToCart() {
+      this.$emit('add-to-cart', this.product.id, 1);
+    }
+}
 
 </script>
 
