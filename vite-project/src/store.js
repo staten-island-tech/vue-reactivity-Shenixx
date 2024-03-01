@@ -7,6 +7,6 @@ export const store = reactive({
   count: 0,
   increment() {
     this.count++
-    this.push.store[],
+    store.push(this.count)
   }
 })
