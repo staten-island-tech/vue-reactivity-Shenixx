@@ -1,6 +1,5 @@
 <template>
   <div>
-    <cartitem v-for="candy in candy" :key="candy.name" :candy="candy"/>
     <h3>{{total}}</h3>
   </div>
 </template>
