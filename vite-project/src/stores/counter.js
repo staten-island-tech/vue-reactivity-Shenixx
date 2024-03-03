@@ -1,9 +1,6 @@
 import { ref, computed } from 'vue'
 import {reactive} from 'vue'
 
-
-
-
 export const total = ref(0)
 export const candy = reactive([
   {

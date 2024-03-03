@@ -7,33 +7,7 @@
   --red: rgb(255, 0, 0);
   --blue: rgb(0, 0, 255);
   --whiteishmaybe: rgb(197, 197, 197);
-  /* --img1: url(https://cdna.artstation.com/p/assets/images/images/025/669/906/large/dino-rhinosaur-done-wp-pink-with-pic.jpg?1586544608);
-  --img2: url(https://pbs.twimg.com/media/EZdgO14WoAINDOG.jpg:large); */
+  --img1: url(https://img.freepik.com/free-vector/minimal-doodle-frame-background-social-story-highlight_53876-97970.jpg);
+  --img2: url(https://pbs.twimg.com/media/EZdgO14WoAINDOG.jpg:large);
 }
 
-.light-theme {
-  --image: var(--img2);
-  --primary: var(--white);
-  --primary1: var(--white2);
-  --seconary: var(--black);
-  --third: var(--blue);
-  --theme: var(--whiteishmaybe);
-}
-
-.dark-theme {
-  --image: var(--img1);
-  --primary: var(--black);
-  --primary1: var(--gray2);
-  --seconary: var(--white);
-  --third: var(--red);
-  --theme: var(--gray);
-}
-
-body {
-  background-image: var(--image);
-  background-attachment: fixed;
-}
-
-#app{
-  width: 75%;
-}

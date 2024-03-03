@@ -1,1 +1,6 @@
 @import './base.css';
+
+body {
+    background-image: var(--img1);
+    background-attachment: fixed;
+  }

@@ -4,9 +4,9 @@ import { RouterLink, RouterView } from 'vue-router'
 
 <template>
   <header>
-      <nav>
-        <RouterLink to="/">Home</RouterLink>
-        <RouterLink to="/about">About</RouterLink>
+      <nav class="main">
+        <h2 class="head2"><RouterLink to="/">Home</RouterLink></h2>
+        <h2 class="head2"><RouterLink to="/about">About</RouterLink></h2>
       </nav>
   </header>
 
@@ -14,6 +14,13 @@ import { RouterLink, RouterView } from 'vue-router'
 </template>
 
 <style scoped>
+.main{
+  text-align: center;
+}
+.head2{
+  background-color: beige;
+}
+
 header {
   line-height: 1.5;
   max-height: 100vh;
@@ -26,9 +33,8 @@ header {
 
 nav {
   width: 100%;
-  font-size: 12px;
+  font-size: 32px;
   text-align: center;
-  margin-top: 2rem;
 }
 
 nav a.router-link-exact-active {

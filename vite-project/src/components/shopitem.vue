@@ -1,8 +1,8 @@
 <template>
-    <div>
-        <h2>{{candy.name}}</h2>
+    <div class = "card">
+        <h2 class>{{candy.name}}</h2>
         <img :src="candy.img"/>
-        <p>{{candy.price}}</p>
+        <p>${{candy.price}}</p>
         <button @click="addtocart(candy)">Add to cart</button>
     </div>
 </template>
@@ -27,6 +27,20 @@ function addtocart(candy){
 
 <style scoped>
 img{
-    width: 10%;
+    width: 40%;
+}
+
+.card {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  padding: 1rem;
+  width: 26%;
+  height: 35%;
+  margin: 1.5% auto;
+  justify-content: space-around;
+  padding: 0 auto;
+  background-color: rgb(220, 216, 253);
+
 }
 </style>
