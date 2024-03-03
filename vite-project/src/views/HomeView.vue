@@ -1,5 +1,4 @@
 <script setup>
-import { shopitem } from '@/components/shopitem.vue';
 import { candy } from '@/stores/counter';
 </script>
 
